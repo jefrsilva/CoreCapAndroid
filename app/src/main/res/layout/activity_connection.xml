@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/connection_server_ip"
+        android:hint="Server IP"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:digits="0123456789."/>
+
+    <EditText
+        android:layout_below="@id/connection_server_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/connection_server_port"
+        android:hint="Server Port"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_below="@id/connection_server_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/connection_client_id"
+        android:hint="Client ID"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_below="@id/connection_client_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/connection_team"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <Button
+        android:layout_below="@id/connection_team"
+        android:text="Connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/connection_connect"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp" />
+
+</RelativeLayout>
